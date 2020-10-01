@@ -73,7 +73,7 @@ int main(void)
 		}
 		else
 		{
-			scanf("%d",&arr2[i-n]);
+			scanf("%d",&arr2[i-n]);		//to give elements into second array n=1st array lenght 
 			createList(&head,arr2[i-n]);
 		}
 	}
