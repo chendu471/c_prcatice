@@ -4,7 +4,14 @@
 
 int main(void)
 {
-	char str[]="technologies";
+
+	printf("Enter string: ");
+	char str[100];
+	scanf("%s",str);	
+
+//	char str[]="technologies";
+
+
 	int n=strlen(str);
 	char result[50]={NULL};
 	int i,j,k,count;
