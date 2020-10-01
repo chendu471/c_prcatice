@@ -21,11 +21,11 @@ void createList(NODE **head,int element)
 	else
 	{
 		NODE *temp=(*head);
-		while(temp)
+		while(temp)			//checking for duplicate element existence
 		{
 			if(element==temp->val)
 			{
-				temp->count+=1;
+				temp->count+=1;			//count will tell how many times the value repeated
 				return;
 			}
 			temp=temp->next;
@@ -36,8 +36,8 @@ void createList(NODE **head,int element)
 		NODE *new_node=(NODE*)malloc(sizeof(NODE));
 		new_node->val=element;
 		new_node->next=0;
-		new_node->count=1;
-		while(temp->next)
+		new_node->count=1;		//default count is 1
+		while(temp->next)		//sort and insert element
 		{
 			if((temp->next->val)>element)
 			{
@@ -46,16 +46,12 @@ void createList(NODE **head,int element)
 				new_node->next=p;
 				break;
 			}
-
 			temp=temp->next;
 		}
-		if(!temp->next)
+		if(!temp->next)			//inserting element at end (new element is bigger than already existing elements)
 		{
 			temp->next=new_node;
 		}
-
-
-
 	}
 
 }
@@ -81,7 +77,7 @@ int main(void)
 			createList(&head,arr2[i-n]);
 		}
 	}
-
+			//printing elemets 
 	while(head)
 	{
 		printf("%d ",head->val);
