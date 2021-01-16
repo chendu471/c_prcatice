@@ -9,6 +9,7 @@ add_node_at_end	add_node.c	/^struct node* add_node_at_end(struct node *head,int 
 count_list	main.c	/^int count_list(struct node* head)$/;"	f
 data	myheaders.h	/^int data;$/;"	m	struct:node
 del_at_pos	delete_node.c	/^struct node* del_at_pos(struct node * head,int pos)$/;"	f
+link_reverse	link_reverse.c	/^struct node *link_reverse(struct node *head)$/;"	f
 main	main.c	/^int main(void)$/;"	f
 next	myheaders.h	/^struct node *next;$/;"	m	struct:node	typeref:struct:node::node
 node	myheaders.h	/^struct node{$/;"	s

@@ -13,7 +13,9 @@ int main(void)
 				2.add at begin \n \
 				3.add at position \n\
 				4.delete node\n \
-				5.stop app\n");
+				5.stop app\n \
+				6.link reverse\n \ 
+				");
 
 		scanf("%d",&option);
 		if(option<4)
@@ -57,7 +59,10 @@ int main(void)
 				{
 					head=del_at_pos(head,pos);		
 				}
-	
+				break;
+			case 6:
+				head=link_reverse(head);
+				break;
 		}
 
 		print_list(head);

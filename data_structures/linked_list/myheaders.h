@@ -13,4 +13,4 @@ struct node* add_at_pos(struct node *head,int data,int pos);
 struct node *del_at_pos(struct node *head,int pos);
 int count_list(struct node *head);
 
-int count_list(struct node *head);
+struct node *link_reverse(struct node *head);
